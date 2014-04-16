@@ -88,7 +88,7 @@ build do
 
   block { FileUtils.mkdir_p("#{install_dir}/embedded/apps") }
 
-  appbundler_apps = %w[chef berkshelf test-kitchen chef-dk]
+  appbundler_apps = %w[chef berkshelf test-kitchen chef-dk blo]
   appbundler_apps.each do |app_name|
     command "#{install_dir}/embedded/bin/rsync -a ../#{app_name} #{install_dir}/embedded/apps/"
     appbuilder("#{install_dir}/embedded/apps/#{app_name}", "#{install_dir}/bin")
