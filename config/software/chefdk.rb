@@ -76,6 +76,7 @@ build do
   auxiliary_gems << "foodcritic"
   auxiliary_gems << "chefspec"
   auxiliary_gems << "rubocop"
+  auxiliary_gems << "berkflow"
   # strainer build is hosed on windows
   #  auxiliary_gems << "strainer"
   auxiliary_gems << "knife-spork"
