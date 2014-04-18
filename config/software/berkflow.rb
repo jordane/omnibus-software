@@ -21,7 +21,7 @@ relative_path "berkflow"
 
 source :git => "https://github.com/reset/berkflow.git"
 
-if platform == 'windows'
+if windows?
   dependency "ruby-windows"
   dependency "ruby-windows-devkit"
 else
